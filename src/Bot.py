@@ -246,5 +246,6 @@ async def on_ready():
     print("Bota e zareden!")
     print("User: {0}".format(bot.user.name))
     print("ID: {0}".format(bot.user.id))
+    await bot.change_status(game=discord.Game(name='.help'))
 
 bot.run('im not stupid ;)')
